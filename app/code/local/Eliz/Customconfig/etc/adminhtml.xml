@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+   <acl>
+      <resources>
+         <admin>
+            <children>
+               <system>
+                  <children>
+                     <config>
+                        <children>
+                           <Eliz_Customconfig module="Eliz_
+Customconfig">">
+                              <title>Show Products</title>
+                           </Eliz_Customconfig>
+                        </children>
+                     </config>
+                  </children>
+               </system>
+            </children>
+         </admin>
+      </resources>
+   </acl>
+</config>

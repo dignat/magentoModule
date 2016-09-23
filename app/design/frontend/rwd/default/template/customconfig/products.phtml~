@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Hello World</title>
+    <style type="text/css">
+        body {
+            background-color:#ffffff;
+        }
+    </style>
+</head>
+<body>
+<h2>New Products</h2>
+<?php $date = $this->getConfigTime(); ?>
+<?php foreach ($this->getProducts() as $product) : ?>
+    <?php $createdAt = strtotime($product['date']) ?>
+    <?php if ($date < $createdAt ): ?>
+    <p><?php  var_dump($date); ?></p>
+    <?php endif ?>
+<?php endforeach; ?>
+
+</body>
+</html>
+
